@@ -61,11 +61,11 @@
     <%
             }
         } else {
-            System.out.print("连接失败！");
+            out.print("连接失败！");
         }
     }
     catch (Exception e) {
-        System.out.print("数据库连接异常！");
+        out.print("数据库连接异常！");
     }
 
 %>
