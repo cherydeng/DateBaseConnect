@@ -59,7 +59,7 @@
                 System.out.println("总页码是");
                 System.out.println(PageCount);
                 System.out.println("当前页码是");
-                System.out.println(Page);
+                System.out.println(request.getParameter("page"));
                 if(PageCount > 0){
                     rs.absolute((Page-1) * PageSize+1);
                     i = 0;
@@ -91,14 +91,14 @@
                 if(Page < PageCount){
                     %>
 
-                    <a href="PageShow.jsp?page=<%=Page+1%>">下一页</a>
+                    <a href="PageShow.jsp?mm=<%=key1%>&key=<%=key%>&page=<%=Page+1%>">下一页</a>
                     <%
 //                        request.getParameter("key");
 //                        request.getParameter("mm");
                     }
                 if(Page > 1){
                     %>
-                    <a href="PageShow.jsp?page=<%=Page-1%>">上一页</a>
+                    <a href="PageShow.jsp?mm=<%=key1%>&key=<%=key%>&page=<%=Page-1%>">上一页</a>
 
                     <%
                     }

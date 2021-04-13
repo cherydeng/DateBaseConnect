@@ -20,10 +20,16 @@ jsp和mysql数据库的连接操作并且将结果输出到表格中
 
 9.点击deployment；点“+”号点Artifacts。然后Apply确认更改就行了。
 
-！！！主意！！！运行的时候一定要保证jsp文件在web文件下
+#！！！注意！！！
+
+运行的时候一定要保证jsp文件在web文件下
+
 此外，一定要是用IDEA 专业版！！ 推荐2019.1
+
 如果连接数据库不成功，可能是没有将mysql驱动程序(注意是.Jar)放到lib文件夹下
 
 Tomcat连接为https://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-9/v9.0.45/bin/apache-tomcat-9.0.45.zip
 
 Mysql下载地址https://dev.mysql.com/downloads/installer/
+
+新更新：解决了分页显示错误的问题，各位可以下载查看

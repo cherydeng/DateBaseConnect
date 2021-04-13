@@ -18,7 +18,7 @@
       请选择要查询的类型
       <select name ="mm" size="" >
         <option value="name">名称</option>
-        <option value="make">制造商</option>
+        <option value="maker">制造商</option>
         <option value="model">规格</option>
       </select>
       &nbsp;
